@@ -1,0 +1,22 @@
+{
+  "name": "quizzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup index.js --file public/app.js --format iife",
+    "dev": "rollup index.js --file public/app.js --format iife -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server 'public' --port 7777"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "rollup": "^2.42.4"
+  }
+}
